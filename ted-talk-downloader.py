@@ -1,6 +1,9 @@
 ##Generalised script to use it as a CLI 
 #TO EXECUTE IT AS A CLI USE
 # python ted-talk-downloader.py www.url.com/download/me
+
+#REQUIRED MODULES requests,beautifulsoup,regex to match pattern,sys to accept and pass arguments
+
 import requests #getting content from url
 from bs4 import BeautifulSoup #web scrapper
 import re #regex 
@@ -48,3 +51,6 @@ with open(file_name,'wb') as f:
     f.write(r.content)
 
 print("Download process finished......")
+
+##TED HAS NOT ALLOWED TO DOWNLOAD VIDEOS FROM SCRIPTS
+## ACCESS DENIED ERROR
